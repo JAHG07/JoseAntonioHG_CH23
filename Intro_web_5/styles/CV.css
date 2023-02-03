@@ -1,0 +1,42 @@
+body{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    background-color: antiquewhite;
+}
+h1{
+    text-transform: uppercase;
+}
+h1 > span{
+    color: aqua;
+}
+img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.imagen{
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+.container{
+    background-color: aliceblue;
+    padding: 0 20px;
+}
+li{
+    list-style: none;
+}
+ul{
+    display: inline;
+}
+.menu{
+    text-align: center;
+}
+.menu > li > ul > li{
+    display: inline;
+}
+.menu > li > ul > li > a{
+    background-color: bisque;
+}
