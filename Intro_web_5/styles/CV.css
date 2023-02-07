@@ -1,42 +1,126 @@
 body{
-    font-family: sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    background-color: antiquewhite;
+    font-family: sans-serif; /*The font-family CSS property specifies a prioritized list of one or more font family names and/or generic family names for the selected element.*/
+    font-weight: 400; /*The font-weight CSS property sets the weight (or boldness) of the font. The weights available depend on the font-family that is currently set.*/
+    font-size: 15px; /*The font-size CSS property sets the size of the font. Changing the font size also updates the sizes of the font size-relative <length> units, such as em, ex, and so forth.*/
+    background-color: antiquewhite; /*The background-color CSS property sets the background color of an element.*/
 }
 h1{
-    text-transform: uppercase;
+    text-transform: uppercase; /*The text-transform CSS property specifies how to capitalize an element's text. It can be used to make text appear in all-uppercase or all-lowercase, or with each word capitalized. It also can help improve legibility for ruby.*/
 }
 h1 > span{
-    color: aqua;
+    color: aqua; /*The color CSS property sets the foreground color value of an element's text and text decorations, and sets the currentcolor value. currentcolor may be used as an indirect value on other properties and is the default for other color properties, such as border-color.*/
 }
 img{
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 10px;
+    width: 200px; /*The width CSS property sets an element's width. By default, it sets the width of the content area, but if box-sizing is set to border-box, it sets the width of the border area.*/
+    height: 200px; /*The height CSS property specifies the height of an element. By default, the property defines the height of the content area. If box-sizing is set to border-box, however, it instead determines the height of the border area.*/
+    object-fit: cover; /*The object-fit CSS property sets how the content of a replaced element, such as an <img> or <video>, should be resized to fit its container.*/
+    border-radius: 50%;/*The border-radius CSS property rounds the corners of an element's outer border edge. You can set a single radius to make circular corners, or two radii to make elliptical corners.*/
+    margin-bottom: 10px;/*The margin-bottom CSS property sets the margin area on the bottom of an element. A positive value places it farther from its neighbors, while a negative value places it closer.*/
 }
 .imagen{
-    text-align: center;
-    border-bottom: 2px solid black;
+    text-align: center;/*The text-align CSS property sets the horizontal alignment of the inline-level content inside a block element or table-cell box. This means it works like vertical-align but in the horizontal direction.*/
+    border-bottom: 2px solid black;/*The border-bottom shorthand CSS property sets an element's bottom border. It sets the values of border-bottom-width, border-bottom-style and border-bottom-color.*/
 }
 .container{
-    background-color: aliceblue;
-    padding: 0 20px;
-}
-li{
-    list-style: none;
-}
-ul{
-    display: inline;
+    background-color: aliceblue;/*The background-color CSS property sets the background color of an element.*/
+    padding: 0 20px;/*The padding CSS shorthand property sets the padding area on all four sides of an element at once.*/
 }
 .menu{
+    margin-top: 25px;/*The margin-top CSS property sets the margin area on the top of an element. A positive value places it farther from its neighbors, while a negative value places it closer.*/
+}
+.menu ul{
     text-align: center;
+    margin: auto;
+    padding: 0%;
+    list-style-type: none;/*The list-style-type CSS property sets the marker (such as a disc, character, or custom counter style) of a list item element*/
 }
-.menu > li > ul > li{
+.menu ul li {
+    display: inline-block;/*The display CSS property sets whether an element is treated as a block or inline element and the layout used for its children, such as flow layout, grid or flex.*/
+    position: relative;/*The position CSS property sets how an element is positioned in a document. The top, right, bottom, and left properties determine the final location of positioned elements.*/
+    width: 200px;
+}
+.menu ul li a{
+    background-color: rgb(19, 18, 17);
+    color: white; /*The color CSS property sets the foreground color value of an element's text and text decorations, and sets the currentcolor value. currentcolor may be used as an indirect value on other properties and is the default for other color properties, such as border-color.*/
+    font-size: 10px; 
+    text-decoration: none;
+    padding: 5px;
+    display: block ;
+}
+.menu ul li ul{
+    position: absolute;
+    top: 25px; /*The top CSS property participates in specifying the vertical position of a positioned element. It has no effect on non-positioned elements.*/
+    left: 0; /*The left CSS property participates in specifying the horizontal position of a positioned element. It has no effect on non-positioned elements.*/
+    list-style-type: none;
+    display: none;
+    height: auto;
+}
+.menu ul li:hover ul{
+    display: inline-block;
+}
+h2{
+    color: orangered;
+    text-transform: uppercase;
+}
+h2::before{
+    content: "// ";
+}
+.clearfix{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.pull-flex{
+    width: 50%;
+}
+.skills :nth-child(2){
+    background-color: orange;
+    height: 30px;
+    width: 60%;
+    line-height: 30px;
+    margin: 5px 0 0 15px;
+}
+.skills :nth-child(3){
+    background-color: orange;
+    height: 30px;
+    width: 40%;
+    line-height: 30px;
+    margin: 5px 0 0 15px;
+}
+.skills :nth-child(4){
+    background-color: orange;
+    height: 30px;
+    width: 80%;
+    line-height: 30px;
+    margin: 5px 0 0 15px;
+}
+.educacion{
+    display: flex;
+    flex-wrap: wrap;
+}
+.an{
+    width: 10%;
+    margin: 10px 0;
+}
+.apre{
+    background-color: gray;
+    width: 90%;
+    border-radius: 10px;
+    margin-top: 3px;
+}
+.comp{
+    width: 20%;
+    margin: 10px 0;
+}
+span{
+    font-weight: bold;
+}
+.dev{
+    width: 70%;
+    margin-top: 3px;
+}
+.hob > p{
+    background-color: gray;
     display: inline;
-}
-.menu > li > ul > li > a{
-    background-color: bisque;
+    margin-right: 5px;
 }
