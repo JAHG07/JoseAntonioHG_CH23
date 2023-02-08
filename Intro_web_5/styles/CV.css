@@ -133,3 +133,23 @@ span{
 .star2{
     width: 50%;
 }
+.pint{
+    width: 110px;
+    height: 14px;
+    background: url(../img/star-grey.png);
+    margin-bottom: 5px;
+}
+.pintre{
+    width: 95%;
+    height: 14px;
+    background: url(../img/star-red.png);
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+}
+.pintri{
+    width: 50%;
+    height: 14px;
+    background: url(../img/star-red.png);
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+}
