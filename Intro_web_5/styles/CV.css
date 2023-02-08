@@ -23,7 +23,9 @@ h1 > span{
 }
 .container{
     background-color: aliceblue;/*The background-color CSS property sets the background color of an element.*/
-    padding: 0 20px;/*The padding CSS shorthand property sets the padding area on all four sides of an element at once.*/
+    padding: 15px 20px;/*The padding CSS shorthand property sets the padding area on all four sides of an element at once.*/
+    width: 900px;
+    margin: 0 auto;
 }
 .menu{
     margin-top: 25px;/*The margin-top CSS property sets the margin area on the top of an element. A positive value places it farther from its neighbors, while a negative value places it closer.*/
@@ -152,4 +154,8 @@ span{
     background: url(../img/star-red.png);
     background-repeat: no-repeat;
     margin-bottom: 5px;
+}
+h4{
+    text-align: center;
+    font-size: 15px;
 }
