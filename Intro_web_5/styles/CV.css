@@ -10,7 +10,7 @@ h1{
 h1 > span{
     color: aqua; /*The color CSS property sets the foreground color value of an element's text and text decorations, and sets the currentcolor value. currentcolor may be used as an indirect value on other properties and is the default for other color properties, such as border-color.*/
 }
-img{
+.imm{
     width: 200px; /*The width CSS property sets an element's width. By default, it sets the width of the content area, but if box-sizing is set to border-box, it sets the width of the border area.*/
     height: 200px; /*The height CSS property specifies the height of an element. By default, the property defines the height of the content area. If box-sizing is set to border-box, however, it instead determines the height of the border area.*/
     object-fit: cover; /*The object-fit CSS property sets how the content of a replaced element, such as an <img> or <video>, should be resized to fit its container.*/
@@ -123,4 +123,13 @@ span{
     background-color: gray;
     display: inline;
     margin-right: 5px;
+}
+.star{
+     display: flex;
+}
+.star1{
+    width: 20%;
+}
+.star2{
+    width: 50%;
 }
