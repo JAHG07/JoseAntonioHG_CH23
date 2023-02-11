@@ -1,0 +1,3 @@
+function cosmoss(){alert("El cosmos se define como un sistema ordenado y con equilibrio, que no se conduce por las leyes humanas ni sobrenaturales, sólo por la ley natural. ")}
+function galaxiass(){alert("Una galaxia es un conjunto de gases, polvo y miles de millones de estrellas y sus sistemas solares. La galaxia se mantiene unida gracias a la fuerza de gravedad.")}
+function planetass(){alert("Un planeta es un objeto astronómico que orbita una estrella y que es lo suficientemente masivo como para ser redondeado por su propia gravedad, pero no lo suficientemente masivo como para causar fusión termonuclear, y que ha despejado su región vecina de planetesimales.")}
