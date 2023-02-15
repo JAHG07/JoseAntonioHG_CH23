@@ -85,3 +85,4 @@ console.log(lista);
 
 let numeros = [1,15,22,10,9];
 console.log(numeros.sort((a,b)=>a-b));
+numeros.map(a=>{a*2})
