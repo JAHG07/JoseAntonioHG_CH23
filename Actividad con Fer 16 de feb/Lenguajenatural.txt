@@ -1,0 +1,16 @@
+Inicio del programa 
+
+Imprimir "Dame la temperatura en Celcius"
+leer C 
+
+si c == numero
+	F = (Celsius × 9/5) + 32
+	K = Celsius + 273.15
+si no 
+	Imprimir "Dame un numero valido"
+	leer C
+
+Imprimir "La temperatura en grados K es ", K
+Imprimir "La temperatura en grados F es ", F
+
+fin del programa
