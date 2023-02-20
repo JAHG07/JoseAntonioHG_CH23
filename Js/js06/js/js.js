@@ -29,3 +29,60 @@ imagen.alt = "Foto de un perrito";
 imagen.className = "ImgPerr";
 imagen.style.width = "300px";
 document.body.append(imagen);
+
+/* 
+metodos para acceder a elementos 
+    get element by ID
+                    Classname
+                    Tagname
+
+metodos para crear a elementos 
+    createElement
+    createTextNode
+
+metodos para insertar a elementos 
+    parentElemnt.append
+                .insertBefore
+                .insertAdjacetElemet
+
+metodos para modificar a elementos 
+    node.outerHTML (leer o referenciar el elemento)
+    node.innerHTML (modificar el elemnto)
+    
+*/ 
+
+const azul = document.querySelector("#botonsum");
+function cambiarCoIor(color){
+    azul.style.color = color;
+}
+
+
+
+botonsuma.addEventListener("click",()=>{
+    let val1 = parseInt(valor0.value);
+    let val2 = parseInt(valor1.value);
+    let suma = val1+val2;
+    console.log(valor0.value);
+    resultado.innerHTML = suma;
+})
+botonresta.addEventListener("click",()=>{
+    let val1 = parseInt(valor0.value);
+    let val2 = parseInt(valor1.value);
+    let suma = val1-val2;
+    console.log(valor0.value);
+    resultado.innerHTML = suma;
+})
+botonmulti.addEventListener("click",()=>{
+    let val1 = parseInt(valor0.value);
+    let val2 = parseInt(valor1.value);
+    let suma = val1*val2;
+    console.log(valor0.value);
+    resultado.innerHTML = suma;
+})
+botondiv.addEventListener("click",()=>{
+    let val1 = parseInt(valor0.value);
+    let val2 = parseInt(valor1.value);
+    let suma = val1/val2;
+    console.log(valor0.value);
+    resultado.innerHTML = suma;
+})
