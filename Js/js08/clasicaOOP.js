@@ -1,24 +1,19 @@
-class numeros {
-    numero0 = 5;
-    numero1 = 0;
-
-    constructor(valor0,valor1){
-        this.numero0 = valor0;
-        this.numero1 = valor1;
+class Barcelona{
+    constructor(nombre,edad,posicion){
+        this.nombre = nombre;
+        this.edad = edad;
+        this.posicion = posicion;
     }
-
-    sumar(a,b){return a+b}
+    saludar() {
+        console.log(`¡Hola!, soy ${this.nombre}`);
+     }
 }
 
-let obj4 =new numeros(8, 6) ;
+let jose = new Barcelona("Jose",22,"delantero");
+let karime = new Barcelona("Karime",28,"Defensa");
+console.log(jose.edad);
+console.log(karime.edad);
+jose.saludar();
+karime.saludar();
 
-let obj3 = new numeros();
-obj3.numero0 = 8;
-obj3.numero1 = 5;
-console.log(obj3.sumar(obj3.numero0, obj3.numero1));
 
-let obj2 = new numeros();
-console.log(obj2.sumar(5, 6));
-
-let objeto = new numeros();
-console.log(objeto.numero0);
