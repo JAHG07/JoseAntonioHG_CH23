@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    background-color: aqua;
+    max-width: 300px;
+    padding: 5px;
+}
+.botton{
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    padding: 0;
+}
+.display{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: right;   
+    font-size: 30px;
+    padding-right: 15px;
+}
