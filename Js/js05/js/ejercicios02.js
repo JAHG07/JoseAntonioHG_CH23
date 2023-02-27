@@ -6,4 +6,4 @@
 // let progCalificacion = 80;
 // if(cspCalificacion>=75 || progCalificacion>=75)console.log("Eres elegible para la graduacion");
 
-console.log("Hola Mundo me la acabo de rifar".replace(/(\w\B)/g,'$1.'));
+console.log("la cadena es una r".replace(/(\w\B)/g,'$1.'));
