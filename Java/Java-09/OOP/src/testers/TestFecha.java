@@ -8,6 +8,7 @@ public class TestFecha {
 		f.setDia(15);
 		f.setMes(3);
 		f.setYear(22);
-		
+		System.out.println(f.diaMesYear());
+		System.out.println(f.toString());
 	}
 }
