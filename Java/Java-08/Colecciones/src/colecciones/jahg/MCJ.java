@@ -2,9 +2,11 @@ package colecciones.jahg;
 import java.util.*;
 public class MCJ {
  public static void main(String[] args) {
+	//MisCollection c = new Miscollection();
 	wrapperClass();
 	listas();
 	setcollection();
+	mapCollection();
 }
  
  static Set setcollection() {
@@ -34,6 +36,19 @@ public class MCJ {
 	 System.out.println(miLista);
 	 return miLista;
 	 
+ }
+ 
+ private static Map mapCollection() {
+	 Map miMap = new HashMap();
+	 miMap.put("valor1", "Juan");
+	 miMap.put("valor2", "Maria");
+	 miMap.put("valor3", "Pedro");
+	 miMap.put("valor4", "Jose");
+	 System.out.println(miMap);
+	 System.out.println(miMap.values());
+	 System.out.println(miMap.keySet());
+	 miMap.remove("valor3");
+	 return miMap;
  }
  
  private static void imprimir(Collection collection) {	
