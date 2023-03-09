@@ -1,13 +1,13 @@
 package com.jahg.clases;
 
-public class AlumnoB {
+public class AlumnoB extends PersonaP{
 	private int matricula;
 	private double promedio;
 	public AlumnoB() {
 		super();
 	}
-	public AlumnoB(int matricula, double promedio) {
-		super();
+	public AlumnoB(int matricula, double promedio ,String nombre,int edad) {
+		super(nombre,edad);
 		this.matricula = matricula;
 		this.promedio = promedio;
 	}
