@@ -1,5 +1,7 @@
 package com.jahg.clases;
 
+import java.util.Scanner;
+
 public class Rectangulo extends FigurasGeometricas{
 	private double base;
 	private double altura;
@@ -31,6 +33,18 @@ public class Rectangulo extends FigurasGeometricas{
 	@Override
 	public String toString() {
 		return "Rectangulo [base=" + base + ", altura=" + altura + "]";
+	}
+
+	@Override
+	public void pedirDatos() {
+		// TODO Auto-generated method stub
+		Scanner dato = new Scanner(System.in);
+		System.out.println("Dame un la base");
+		double b = dato.nextDouble();
+		setBase(b);
+		System.out.println("Dame un la altura");
+		double a = dato.nextDouble();
+		setAltura(a);
 	}
 
 }

@@ -9,6 +9,6 @@ public abstract class FigurasGeometricas {
 		this.nombre = nombre;
 	}
 
-
 	public abstract double areas();
+	public abstract void pedirDatos();
 }

@@ -41,6 +41,13 @@ public class Triangulo extends FigurasGeometricas{
 		// TODO Auto-generated method stub
 		return base*altura/2;
 	}
+
+
+	@Override
+	public void pedirDatos() {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	
 }

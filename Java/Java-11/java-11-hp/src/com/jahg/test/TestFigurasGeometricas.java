@@ -11,5 +11,9 @@ public class TestFigurasGeometricas {
 		System.out.println(cir.areas());
 		System.out.println(tri.areas());
 		System.out.println(rec.toString());
+		
+		rec.pedirDatos();
+		System.out.println(rec.toString());
+		System.out.println(rec.areas());
 	}
 }
