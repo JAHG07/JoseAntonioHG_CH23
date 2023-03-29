@@ -1,6 +1,6 @@
 -- Intersection
 -- Students with contries 
-
+use generation;
 select * from students;
 select * from countries;
 select * from courses_has_students;
@@ -63,14 +63,16 @@ FROM courses_has_students t1
 INNER JOIN courses t2
 ON t1.course_code = t2.code
 GROUP BY t2.code;
--- Encontrar estudiantes del pais 125
+-- Encontrar estudiantes del pais 125   ----------------
 select * from students where nationality = 125;
--- Encontrar estudiante pertenezca al curso java-1
+-- Encontrar estudiante pertenezca al curso java-1  ----------
 select count(*) from courses_has_students where course_code = 'JAVA-1';
--- Contar estudiantes por cada modulo
+-- Contar estudiantes por cada modulo  ---------------
 select * from courses_has_students;
 select * from courses;
 select * from modules;
+select * from students;
+
 select modules.code, count(*)
 from modules
 inner join courses
@@ -80,4 +82,9 @@ on courses.code = courses_has_students.course_code
 group by modules.code;
 --  Encontrar estudiantes SIN curso
 select count(idStudent) from students;
+
+
+
+
+	
 

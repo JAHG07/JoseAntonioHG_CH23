@@ -1,11 +1,14 @@
 package com.generation.ch23.jpa.models;
 
+import java.util.ArrayList;
+
 import jakarta.persistence.Column;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
@@ -19,8 +22,26 @@ public class UsuarioModel {
     private String nombre;
     private String email;
     private Integer prioridad;
+    
+    @OneToMany(mappedBy = "usuario")
+    private ArrayList<ProductModel> productos;
+    
+    @OneToMany(mappedBy = "usuario")
+    private ArrayList<OrderModel> ordenes;
+    
+    public UsuarioModel(Long id, String nombre, String email, Integer prioridad) {
+		super();
+		this.id = id;
+		this.nombre = nombre;
+		this.email = email;
+		this.prioridad = prioridad;
+	}
+    
+	public UsuarioModel() {
+		super();
+	}
 
-    public String getNombre() {
+	public String getNombre() {
         return nombre;
     }
 
@@ -52,5 +73,22 @@ public class UsuarioModel {
         this.prioridad = prioridad;
     }
 
+	public ArrayList<ProductModel> getProductos() {
+		return productos;
+	}
+
+	public void setProductos(ArrayList<ProductModel> productos) {
+		this.productos = productos;
+	}
+
+	public ArrayList<OrderModel> getOrdenes() {
+		return ordenes;
+	}
+
+	public void setOrdenes(ArrayList<OrderModel> ordenes) {
+		this.ordenes = ordenes;
+	}
+
+	
     
 }
